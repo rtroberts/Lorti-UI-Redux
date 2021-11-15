@@ -1,0 +1,15 @@
+## Interface: 20510
+## Author: Lorti, Chordsy, Sinope, Macumba, Karthos
+## Version: v8
+## Title: Lorti UI - Karthos
+## Notes: Darkens the default UI. Updated for the Modern Age by Karthos
+## OptionalDeps: WideQuestLog, ClassicCastbars
+config.lua
+core\helpers.lua
+core\actionbars.lua
+core\frames.lua
+core\buffs.lua
+core\auras.lua
+core\minimap.lua
+core\focus.lua
+core\errors.lua
