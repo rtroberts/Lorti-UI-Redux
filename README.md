@@ -1,28 +1,31 @@
-# Lorti UI Classic.
+# Lorti UI Redux.
 
 Darkens the default UI.
 
-Big thanks to the original creator of this UI, Lorti. This is simply updated to work with the Classic client and does not work with any other vanilla/private server client.
+Big thanks to the original creator of this UI, Lorti. This is a refactor/partial rewrite of the original addon with the intent to support all modern versions of the game, which include:
+- Classic Era 1.13.7
+- Season of Mastery 1.14.x
+- TBC Classic
+- Retail
+
 https://www.curseforge.com/wow/addons/lorti_ui
 
-
->**IMPORTANT INFO REGARDING THE FUTURE OF THIS ADDON**
-I am no longer playing Classic and will not answer any questions or try fixing any issues. If you are interested in taking over this project, send me a message on Discord.
+Remove the "-master" when downloaded. Folder should look like this: \Interface\AddOns\Lorti-UI-Redux
 
 
-Discord: Chordsy#8773
-
-Remove the "-master" when downloaded. Folder should look like this: \Interface\AddOns\Lorti-UI-Classic
-
-
-Changelog:
+Changes in Lorti UI Redux include:
 - Simplified and refactored code in many places
 - Added config values for common variables
-- Reduced algorithmic complexity of many common calls
 - General performance improvements
-- Simplified API space for better compatibility with all versions of WoW
+- Simplified API space for better compatibility with all versions of WoW (e.g., focus frames and target castbar differences between Classic + TBC/Retail)
 - Removed some little-used features 
-    - removed class-colored actionbar shading
+    - removed class-colored shading in most places
+        - buff/debuff frames
+        - actionbars
+    - removed custom code and shading for popular addons like Dominos and Bartender
+        - these addons already give you the ability to have total control over the look + feel
     - removed the ability to move buff+debuff frames
         - MoveAnything already does this and is quite lightweight
+
+If you've used some of these features and would like their return, please open a GitHub issue or pull request.
 
