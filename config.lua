@@ -28,15 +28,15 @@ cfg.show_gryphons = false
 cfg.hide_error_text = true
 
 cfg.textures = {
-  normal = "Interface\\AddOns\\Lorti-UI-Classic\\textures\\gloss",
-  flash = "Interface\\AddOns\\Lorti-UI-Classic\\textures\\flash",
-  hover = "Interface\\AddOns\\Lorti-UI-Classic\\textures\\hover",
-  pushed = "Interface\\AddOns\\Lorti-UI-Classic\\textures\\pushed",
-  checked = "Interface\\AddOns\\Lorti-UI-Classic\\textures\\checked",
-  equipped = "Interface\\AddOns\\Lorti-UI-Classic\\textures\\gloss_grey",
-  buttonback = "Interface\\AddOns\\Lorti-UI-Classic\\textures\\button_background",
-  buttonbackflat = "Interface\\AddOns\\Lorti-UI-Classic\\textures\\button_background_flat",
-  outer_shadow = "Interface\\AddOns\\Lorti-UI-Classic\\textures\\outer_shadow"
+  normal = "Interface\\AddOns\\Lorti-UI-Redux\\textures\\gloss",
+  flash = "Interface\\AddOns\\Lorti-UI-Redux\\textures\\flash",
+  hover = "Interface\\AddOns\\Lorti-UI-Redux\\textures\\hover",
+  pushed = "Interface\\AddOns\\Lorti-UI-Redux\\textures\\pushed",
+  checked = "Interface\\AddOns\\Lorti-UI-Redux\\textures\\checked",
+  equipped = "Interface\\AddOns\\Lorti-UI-Redux\\textures\\gloss_grey",
+  buttonback = "Interface\\AddOns\\Lorti-UI-Redux\\textures\\button_background",
+  buttonbackflat = "Interface\\AddOns\\Lorti-UI-Redux\\textures\\button_background_flat",
+  outer_shadow = "Interface\\AddOns\\Lorti-UI-Redux\\textures\\outer_shadow"
 }
 
 cfg.background = {
@@ -105,12 +105,12 @@ cfg.buffFrame = {
     padding = -2
   },
   border = {
-    texture = "Interface\\AddOns\\Lorti-UI-Classic\\textures\\gloss",
+    texture = "Interface\\AddOns\\Lorti-UI-Redux\\textures\\gloss",
     color = {r = 0.4, g = 0.35, b = 0.35}
   },
   background = {
     show = true, --show backdrop
-    edgeFile = "Interface\\AddOns\\Lorti-UI-Classic\\textures\\outer_shadow",
+    edgeFile = "Interface\\AddOns\\Lorti-UI-Redux\\textures\\outer_shadow",
     color = {r = 0, g = 0, b = 0, a = 0.9},
     inset = 6,
     padding = 4
@@ -142,12 +142,12 @@ cfg.debuffFrame = {
     padding = -2
   },
   border = {
-    texture = "Interface\\AddOns\\Lorti-UI-Classic\\textures\\gloss2",
+    texture = "Interface\\AddOns\\Lorti-UI-Redux\\textures\\gloss2",
     color = {r = 0.4, g = 0.35, b = 0.35}
   },
   background = {
     show = true, --show backdrop
-    edgeFile = "Interface\\AddOns\\Lorti-UI-Classic\\textures\\outer_shadow",
+    edgeFile = "Interface\\AddOns\\Lorti-UI-Redux\\textures\\outer_shadow",
     color = {r = 0, g = 0, b = 0, a = 0.9},
     inset = 6,
     padding = 4

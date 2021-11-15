@@ -10,7 +10,7 @@ local cfg = ns.cfg
 --backdrop
 local backdrop1 = {
 	bgFile = nil,
-	edgeFile = "Interface\\AddOns\\Lorti-UI-Classic\\textures\\outer_shadow",
+	edgeFile = "Interface\\AddOns\\Lorti-UI-Redux\\textures\\outer_shadow",
 	tile = false,
 	tileSize = 32,
 	edgeSize = 4,
@@ -45,7 +45,7 @@ local function applySkin(b)
 	b.icon = icon
 	--border
 	local border = _G[name .. "Border"] or b:CreateTexture(name .. "Border", "BACKGROUND", nil, -7)
-	border:SetTexture("Interface\\AddOns\\Lorti-UI-Classic\\textures\\gloss2")
+	border:SetTexture("Interface\\AddOns\\Lorti-UI-Redux\\textures\\gloss2")
 	border:SetTexCoord(0, 1, 0, 1)
 	border:SetDrawLayer("BACKGROUND", -7)
 	if b.buff then
@@ -87,7 +87,7 @@ local function applycastSkin(b)
 	frame = CreateFrame("Frame", nil, b.parent)
 	--border
 	local border = frame:CreateTexture(nil, "BACKGROUND")
-	border:SetTexture("Interface\\AddOns\\Lorti-UI-Classic\\textures\\gloss")
+	border:SetTexture("Interface\\AddOns\\Lorti-UI-Redux\\textures\\gloss")
 	border:SetTexCoord(0, 1, 0, 1)
 	border:SetDrawLayer("BACKGROUND", -7)
 	border:SetVertexColor(0.4, 0.35, 0.35)

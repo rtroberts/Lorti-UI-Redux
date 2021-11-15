@@ -25,13 +25,13 @@ hooksecurefunc(
 			self.manabar.RightText:Hide()
 			forceNormalTexture = true
 		elseif (classification == "worldboss" or classification == "elite") then
-			self.borderTexture:SetTexture("Interface\\AddOns\\Lorti-UI-Classic\\textures\\target\\elite")
+			self.borderTexture:SetTexture("Interface\\AddOns\\Lorti-UI-Redux\\textures\\target\\elite")
 			self.borderTexture:SetVertexColor(1, 1, 1)
 		elseif (classification == "rareelite") then
-			self.borderTexture:SetTexture("Interface\\AddOns\\Lorti-UI-Classic\\textures\\target\\rare-elite")
+			self.borderTexture:SetTexture("Interface\\AddOns\\Lorti-UI-Redux\\textures\\target\\rare-elite")
 			self.borderTexture:SetVertexColor(1, 1, 1)
 		elseif (classification == "rare") then
-			self.borderTexture:SetTexture("Interface\\AddOns\\Lorti-UI-Classic\\textures\\target\\rare")
+			self.borderTexture:SetTexture("Interface\\AddOns\\Lorti-UI-Redux\\textures\\target\\rare")
 			self.borderTexture:SetVertexColor(1, 1, 1)
 		else
 			self.borderTexture:SetTexture("Interface\\TargetingFrame\\UI-TargetingFrame")
@@ -124,7 +124,7 @@ CF:SetScript(
 		end
 
 		CompactRaidFrameManagerToggleButton:SetNormalTexture(
-			"Interface\\AddOns\\Lorti-UI-Classic\\textures\\raid\\RaidPanel-Toggle"
+			"Interface\\AddOns\\Lorti-UI-Redux\\textures\\raid\\RaidPanel-Toggle"
 		)
 
 		hooksecurefunc(
@@ -472,7 +472,7 @@ for _, v in pairs({a, b, c, d}) do
 end
 
 SpellBookFrame.Material = SpellBookFrame:CreateTexture(nil, "OVERLAY", nil, 7)
-SpellBookFrame.Material:SetTexture [[Interface\AddOns\Lorti-UI-Classic\textures\quest\QuestBG.tga]]
+SpellBookFrame.Material:SetTexture [[Interface\AddOns\Lorti-UI-Redux\textures\quest\QuestBG.tga]]
 SpellBookFrame.Material:SetWidth(547)
 SpellBookFrame.Material:SetHeight(541)
 SpellBookFrame.Material:SetPoint("TOPLEFT", SpellBookFrame, 22, -74)
@@ -481,7 +481,7 @@ SpellBookFrame.Material:SetVertexColor(.7, .7, .7)
 -- Quest Log Frame
 if (IsAddOnLoaded("WideQuestLog")) then
 	QuestLogFrame.Material = QuestLogFrame:CreateTexture(nil, "OVERLAY", nil, 7)
-	QuestLogFrame.Material:SetTexture [[Interface\AddOns\Lorti-UI-Classic\textures\quest\QuestBG.tga]]
+	QuestLogFrame.Material:SetTexture [[Interface\AddOns\Lorti-UI-Redux\textures\quest\QuestBG.tga]]
 	QuestLogFrame.Material:SetWidth(524)
 	QuestLogFrame.Material:SetHeight(553)
 	QuestLogFrame.Material:SetPoint("TOPLEFT", QuestLogDetailScrollFrame, -10, 0)
@@ -493,7 +493,7 @@ else
 	end
 
 	QuestLogFrame.Material = QuestLogFrame:CreateTexture(nil, "OVERLAY", nil, 7)
-	QuestLogFrame.Material:SetTexture [[Interface\AddOns\Lorti-UI-Classic\textures\quest\QuestBG.tga]]
+	QuestLogFrame.Material:SetTexture [[Interface\AddOns\Lorti-UI-Redux\textures\quest\QuestBG.tga]]
 	QuestLogFrame.Material:SetWidth(514)
 	QuestLogFrame.Material:SetHeight(400)
 	QuestLogFrame.Material:SetPoint("TOPLEFT", QuestLogDetailScrollFrame, 0, 0)
