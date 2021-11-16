@@ -27,17 +27,13 @@ local backdrop1 = {
 ---------------------------------------
 
 --apply aura frame texture func
-local function applySkin(b)
+local function applySkin(b, isBuff)
 	if not b or (b and b.styled) then
 		return
 	end
 	--button name
 	local name = b:GetName()
-	if (name:match("Debuff")) then
-		b.debuff = true
-	else
-		b.buff = true
-	end
+
 	--icon
 	local icon = _G[name .. "Icon"]
 	icon:SetTexCoord(0.1, 0.9, 0.1, 0.9)
@@ -48,7 +44,7 @@ local function applySkin(b)
 	border:SetTexture("Interface\\AddOns\\Lorti-UI-Redux\\textures\\gloss2")
 	border:SetTexCoord(0, 1, 0, 1)
 	border:SetDrawLayer("BACKGROUND", -7)
-	if b.buff then
+	if isBuff then
 		border:SetVertexColor(0, 0, 0)
 	end
 	border:ClearAllPoints()
@@ -79,7 +75,6 @@ local function applycastSkin(b)
 	end
 	-- parent
 	if b == TargetFrameSpellBar.Icon then
-		print("hey got an icon!!")
 		b.parent = TargetFrameSpellBar
 		b:SetTexCoord(0.1, 0.9, 0.1, 0.9)
 	end
@@ -134,23 +129,23 @@ hooksecurefunc(
 	function(self)
 		for i = 1, MAX_TARGET_BUFFS do
 			b = _G["TargetFrameBuff" .. i]
-			applySkin(b)
+			applySkin(b, true)
 		end
 		for i = 1, MAX_TARGET_DEBUFFS do
 			b = _G["TargetFrameDebuff" .. i]
-			applySkin(b)
+			applySkin(b, false)
 		end
 		for i = 1, MAX_TARGET_BUFFS do
 			b = _G["FocusFrameBuff" .. i]
-			applySkin(b)
+			applySkin(b, true)
 		end
 		for i = 1, MAX_TARGET_DEBUFFS do
 			b = _G["FocusFrameDebuff" .. i]
-			applySkin(b)
+			applySkin(b, false)
 		end
 	end
 )
 
 total = 0
-cf = CreateFrame("Frame", "Lorti_Auras")
-cf:SetScript("OnUpdate", UpdateTimer)
+--cf = CreateFrame("Frame", "Lorti_Auras")
+--cf:SetScript("OnUpdate", UpdateTimer)
