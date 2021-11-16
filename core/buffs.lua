@@ -161,7 +161,6 @@ local function updateAllBuffAnchors()
     end
     --apply skin
     if not button.styled then
-      print(button:GetName())
       applySkin(button)
     end
   end
