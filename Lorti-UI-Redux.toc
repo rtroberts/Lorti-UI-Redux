@@ -1,8 +1,8 @@
-## Interface: 20510
+## Interface: 11401
 ## Author: Lorti, Chordsy, Sinope, Macumba, Karthos
-## Version: v8
-## Title: Lorti UI - Karthos
-## Notes: Darkens the default UI. Updated for the Modern Age by Karthos
+## Version: 1.0
+## Title: Lorti UI Redux
+## Notes: Darkens the default UI. Updated for the modern game
 ## OptionalDeps: WideQuestLog, ClassicCastbars
 config.lua
 core\helpers.lua
